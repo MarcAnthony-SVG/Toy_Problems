@@ -11,5 +11,14 @@
  */
 
 var evenOccurrence = function(arr) {
-  // Your work here!
-};
+  var onlyEven = []; 
+  for (var i = 0; i < arr.length; i++) {
+      if (arr[i] > 1) {
+          console.log(onlyEven);
+          onlyEven.push(arr[i]);
+          return onlyEven;
+      } else {
+          return null;
+  } }
+  return onlyEven;
+}; console.log(evenOccurrence([1, 7, 2, 4, 5, 6, 8, 9, 6, 4]));
