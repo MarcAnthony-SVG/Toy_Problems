@@ -11,4 +11,5 @@
 // var welcome = compose(greet, exclaim);
 // console.log(`Test1: ${welcome('phillip')}`); //=> 'hi: PHILLIP!'
 
-function composePipe(...funcs) {}
+function composePipe(...funcs) {
+}

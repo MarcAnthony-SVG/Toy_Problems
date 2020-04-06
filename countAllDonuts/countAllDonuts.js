@@ -25,5 +25,8 @@
 // countAllDonuts(intake) --> 37
 
 function countAllDonuts(obj) {
-  // Your work here!
+  if (!intake.next === null) {
+   return intake.donuts;
+  }
 }
+console.log(countAllDonuts(intake));

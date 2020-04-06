@@ -53,6 +53,7 @@
 // console.log(evenOccurrence([1, 7, 2, 4, 5, 6, 7, 8, 9, 6, 4]));
 
 var evenOccurrence = function(arr) {
+<<<<<<< HEAD
 	//key : ocurrence object
 	var obj = {};
 	//iterate over elements in input array
@@ -71,3 +72,16 @@ var evenOccurrence = function(arr) {
 	return null;
 };
 console.log(evenOccurrence([1, 7, 2, 4, 5, 6, 7, 8, 9, 6, 4]));
+=======
+  var onlyEven = []; 
+  for (var i = 0; i < arr.length; i++) {
+      if (arr[i] > 1) {
+          console.log(onlyEven);
+          onlyEven.push(arr[i]);
+          return onlyEven;
+      } else {
+          return null;
+  } }
+  return onlyEven;
+}; console.log(evenOccurrence([1, 7, 2, 4, 5, 6, 8, 9, 6, 4]));
+>>>>>>> 678a26b27bb0e2bb5e8aebc7a0c4f54110907515
