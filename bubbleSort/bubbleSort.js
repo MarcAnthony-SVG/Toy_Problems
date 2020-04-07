@@ -7,6 +7,20 @@
 // Once it gets to the end of the array, it starts over and repeats the process until the array is sorted numerically.
 // Implement a function that takes an array and sorts it using this technique.
 
-// NOTE: DO NOT use JavaScript’s built-in sorting function (Array.prototype.sort).
 
-function bubbleSort(array) {}
+function bubbleSort(array) {
+var sorted = false
+while(!sorted) {
+  sorted = true
+  for(let i=0; i < array.length; i++) {
+    if(array[i] < array[i-1]) {
+      var hold = array[i];
+      array[i] = array[i-1];
+      array[i-1] = hold;
+      sorted = false;
+    }
+  }
+}
+return array;
+}
+console.log(bubbleSort([3,5,4,2,1,0]));
