@@ -35,6 +35,7 @@
 
 // This function is to help you test, and should not be incorporated in your solution.
 // It will transform an array of numbers into an array of valid objects.
+// Your code goes here. Feel free to add helper functions if needed.
 var testingTransform = function(array) {
   var transform = [];
 
@@ -46,6 +47,15 @@ var testingTransform = function(array) {
 };
 
 var insertionSort = function(array) {
-  // Your code goes here. Feel free to add helper functions if needed.
+  var order = 0;  // order is to keep the order
+  var newArray = []; // create new array to push in order
+  for (let i = 0; i < array.length; i++){ // iterate through array and to access the value 
+    if(array[i].value > array[i].value){ // sort by values 
+      order++;  
+      newArray.push(array[i].value.order);
+      console.log(newArray);
+    }
+  }
   return array;
 };
+console.log("INSERTION",insertionSort([{value: 2}, {value: 1}, {value: 3}])); 

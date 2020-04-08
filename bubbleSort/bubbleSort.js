@@ -12,12 +12,14 @@ function bubbleSort(array) {
 var sorted = false
 while(!sorted) {
   sorted = true
-  for(let i=0; i < array.length; i++) {
+  for(let i= 0; i < array.length; i++) {
+    // console.log("for",array[i]);
     if(array[i] < array[i-1]) {
       var hold = array[i];
       array[i] = array[i-1];
       array[i-1] = hold;
       sorted = false;
+      console.log(array);
     }
   }
 }
