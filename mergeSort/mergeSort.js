@@ -96,6 +96,18 @@
  */
 
 var mergeSort = function(array) {
-  // Your code here.
+  const sortedArr = [];
+  var middle = Math.floor(array.length/2); //1. Split the input array in half
+  // console.log('MIDDLE',middle); 
+  var left = array.slice(0,middle);  //1. Split the input array in half
+  // console.log('LEFT',left);
+  var right = array.slice(middle) //1. Split the input array in half
+  // console.log('RIGHT',right);
+  for(let i = 0; i < left.length; i++){
+    for(let j = 0; j < right.length; j++){
+      newleft = array[i].slice(0,middle); 
+      newright = array[j].slice(0,middle); 
+    }
+  }
 };
-
+console.log(mergeSort([1,4,5,7,8,9,2,3,6,10]));
