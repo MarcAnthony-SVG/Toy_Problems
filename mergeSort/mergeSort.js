@@ -106,8 +106,10 @@ var mergeSort = function(array) {
   for(let i = 0; i < left.length; i++){
     for(let j = 0; j < right.length; j++){
       newleft = array[i].slice(0,middle); 
+      console.log(newleft);
       newright = array[j].slice(0,middle); 
     }
   }
+  return newleft; 
 };
 console.log(mergeSort([1,4,5,7,8,9,2,3,6,10]));

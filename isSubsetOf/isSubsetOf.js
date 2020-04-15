@@ -20,7 +20,26 @@
 /*
  * Extra credit: Make the method work for arrays that contain objects and/or arrays as elements.
  */
+/* I) arr
+   O) Boolean true or false
+   E) Disregard duplicates
+   C) Output boolean
+   1) Set a variable to the array prototype using this.
+   2) Check for duplicates 
+   3) Compare this.array to arr
+   4) If they have same items then true else false
+*/
 
 Array.prototype.isSubsetOf = function(arr) {
-  // your code here
+  const array = this;
+  // console.log("a",array);
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === array[1]){
+      array.p
+    }
+}
 };
+var a = ['commit','push'];
+a.isSubsetOf(['commit','rebase','push','blame']);
+console.log("s",a.isSubsetOf(['commit','rebase','push','blame']));
+
