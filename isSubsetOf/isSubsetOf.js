@@ -32,14 +32,17 @@
 
 Array.prototype.isSubsetOf = function(arr) {
   const array = this;
+  const target= [...arr];
   // console.log("a",array);
   for (let i = 0; i < array.length; i++) {
-    if (array[i] === array[1]){
-      array.p
+    for (let j = 0; j < target.length; j++)
+    if (array[i] === target[i]){
+      return true;
+    } else {
+      return false;
     }
 }
 };
 var a = ['commit','push'];
-a.isSubsetOf(['commit','rebase','push','blame']);
-console.log("s",a.isSubsetOf(['commit','rebase','push','blame']));
+console.log("s",a.isSubsetOf(['rebase','blame']));
 
