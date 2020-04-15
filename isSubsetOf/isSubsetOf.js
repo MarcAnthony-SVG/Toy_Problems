@@ -36,7 +36,7 @@ Array.prototype.isSubsetOf = function(arr) {
   // console.log("a",array);
   for (let i = 0; i < array.length; i++) {
     for (let j = 0; j < target.length; j++)
-    if (array[i] === target[i]){
+    if (array[i] === target[j]){
       return true;
     } else {
       return false;
@@ -44,5 +44,5 @@ Array.prototype.isSubsetOf = function(arr) {
 }
 };
 var a = ['commit','push'];
-console.log("s",a.isSubsetOf(['rebase','blame']));
+console.log("s",a.isSubsetOf(['commit','rebase','push','blame']));
 
