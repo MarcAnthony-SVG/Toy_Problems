@@ -22,10 +22,13 @@
  * result === 'foobar'; // true
  *
  */
-
-var bind = function() {
-  // TODO: Your code here
+//1) function should take an object
+//2) if that object has a function with a 'this' then change that to value;
+// function should not add the two values;
+var bind = function(obj,value) {
+  return a + (b);
 };
+console.log(bind(1,2));
 
 /*
  * Function.prototype.bind:
@@ -52,6 +55,6 @@ var bind = function() {
  *
  */
 
-Function.prototype.bind = function() {
-  // TODO: Your code here
-};
+// Function.prototype.bind = function(value) {
+//   return this + value;
+// };

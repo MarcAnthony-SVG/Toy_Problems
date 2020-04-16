@@ -34,9 +34,10 @@ Array.prototype.isSubsetOf = function(arr) {
   const array = this;
   const target= [...arr];
   // console.log("a",array);
-  for (let i = 0; i < array.length; i++) {
-    for (let j = 0; j < target.length; j++)
-    if (array[i] === target[j]){
+  for (var val of array) {
+    for (var val of target)
+    if (array[val] === target[val]){
+      console.log(array[val]);
       return true;
     } else {
       return false;
@@ -44,5 +45,5 @@ Array.prototype.isSubsetOf = function(arr) {
 }
 };
 var a = ['commit','push'];
-console.log("s",a.isSubsetOf(['commit','rebase','push','blame']));
+console.log("s",a.isSubsetOf(['rebase','push']));
 
