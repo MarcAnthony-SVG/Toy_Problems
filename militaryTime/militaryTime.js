@@ -7,7 +7,8 @@ function militaryTime(timeStr) {
   // const timeArray = [];
   console.log("first",startTime);
   // const hours = [];
-  // const minutes = [];
+  const minutes = startTime.slice(startTime.length-4,startTime.length-2).join('');
+  console.log(minutes);
   const timeOfDay = startTime.slice(startTime.length-2).join('');
   console.log(timeOfDay); // if(timeOfDay === pm)
 
